@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "seneschal"
-version = "0.2.3"
+version = "0.2.4"
 authors = [
   { name = "SteveBlackbeard" },
 ]
@@ -32,7 +32,9 @@ Issues = "https://github.com/SteveBlackbeard/SENESCHAL-by-Ethernium/issues"
 Changelog = "https://github.com/SteveBlackbeard/SENESCHAL-by-Ethernium/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
-mcp = ["mcp>=1.0.0"]
+# The stdio server imports the FastMCP 1.x API.  MCP 2.x moved that surface,
+# so accepting it here produces an installed-but-unstartable optional server.
+mcp = ["mcp>=1.0.0,<2.0.0"]
 measure = ["tiktoken>=0.7"]
 security = ["cryptography>=42"]
 
