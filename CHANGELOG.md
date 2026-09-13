@@ -3,6 +3,14 @@
 All notable changes to Seneschal are documented here. This project follows
 [Semantic Versioning](https://semver.org/).
 
+## [0.2.4] - 2026-09-13
+
+### Fixed
+- Bound the optional MCP dependency below 2.0. The current stdio server uses
+  the FastMCP 1.x import surface; accepting MCP 2.x installed a server that
+  exited before the MCP handshake. The optional installation now resolves a
+  compatible protocol implementation.
+
 ## [0.2.3] - 2026-07-29
 
 ### Fixed — what dogfooding a live local stack found
