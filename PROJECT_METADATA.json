@@ -1,0 +1,32 @@
+{
+  "schema": "nullalabs.project-metadata/v1",
+  "project": {
+    "name": "SENESCHAL by Ethernium",
+    "repository": "NullaLabs/SENESCHAL-by-Ethernium",
+    "public_url": "https://github.com/NullaLabs/SENESCHAL-by-Ethernium",
+    "purpose": "Context, cost and security preflight layer for AI workflows."
+  },
+  "github_lifecycle": {
+    "repository_created_at": "2026-06-19T19:47:01Z",
+    "public_visibility_verified_at": "2026-09-20T03:00:49Z",
+    "default_branch": "main",
+    "history_scope": "GitHub repository and reachable Git history only; work predating GitHub is not inferred."
+  },
+  "observed_baseline": {
+    "observed_at": "2026-09-20T03:00:00Z",
+    "commit": "ac386d737e63cedc7cd597277642b22e5aef2adb",
+    "first_reachable_commit_at": "2026-06-19T13:46:51-06:00",
+    "latest_reachable_commit_at": "2026-09-16T09:29:18-06:00",
+    "default_branch_commit_count": 72,
+    "all_ref_commit_count": 75
+  },
+  "verification": {
+    "command": "python -m pytest -q",
+    "result": "pass: 106 tests",
+    "source_revision": "ac386d737e63cedc7cd597277642b22e5aef2adb"
+  },
+  "evidence_boundary": {
+    "anchoring_status": "No current OpenTimestamps or Bitcoin anchor is claimed by this metadata.",
+    "policy": "Git provenance is the normal evidence layer. Chronolith may aggregate release manifests; a Bitcoin timestamp is reserved for an approved major or legal/historical milestone."
+  }
+}
